@@ -5,7 +5,7 @@ Checkout medium post : -
 
 https://medium.com/@mkd0237/how-to-create-generic-gradient-text-colour-pattern-color-for-uilabel-uibutton-uitextview-etc-1f0616d96af6
 
-
+```
 func getGradientLayer(bounds:CGRect) -> CAGradientLayer{
     let gradient = CAGradientLayer()
     gradient.frame = bounds
@@ -29,3 +29,4 @@ button.setTitle("Hello World", for: .normal)
 button.titleLabel?.font = UIFont.boldSystemFont(ofSize:80)
 let gradient = getGradientLayer(bounds: button.bounds)
 button.setTitleColor(gradientColor(bounds: button.bounds, gradientLayer: gradient), for: .normal)
+```
